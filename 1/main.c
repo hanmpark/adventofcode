@@ -6,7 +6,7 @@
 /*   By: hanmpark <hanmpark@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/02 12:10:30 by hanmpark          #+#    #+#             */
-/*   Updated: 2023/12/04 18:57:35 by hanmpark         ###   ########.fr       */
+/*   Updated: 2023/12/04 23:44:14 by hanmpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,7 +119,7 @@ int main() {
 
 	int fd;
 
-	if ((fd = open("text.txt", O_RDONLY)) == -1) {
+	if ((fd = open("input.txt", O_RDONLY)) == -1) {
 		return 1;
 	}
 	printf("1) sum of all calibration values = %d\n", sum_of_calibration_values(fd, false));
